@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://members.home.com/flexbackup/tarball/%{name}-%{version}.tar.gz
+# Source0-md5:	5e5042794c778358dbda88c02fcdc4f0
 Patch0:		%{name}-ksh.patch
 URL:		http://members.home.com/flexbackup/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
