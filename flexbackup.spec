@@ -58,13 +58,11 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 install flexbackup $RPM_BUILD_ROOT%{_bindir}
 install flexbackup.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
-gzip -9nf flexbackup.lsm CHANGES CREDITS README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc flexbackup.lsm* CHANGES* CREDITS* README* TODO*
+%doc flexbackup.lsm CHANGES CREDITS README TODO
 %attr(755,root,root) %{_bindir}/flexbackup
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/flexbackup.conf
