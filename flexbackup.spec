@@ -2,7 +2,7 @@ Summary:	Flexible backup script
 Summary(pl):	Elastyczny skrypt do tworzenia kopii zapasowych
 Name:		flexbackup
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://flexbackup.sourceforge.net/tarball/%{name}-%{version}.tar.gz
@@ -55,6 +55,7 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install -d $RPM_BUILD_ROOT%{_mandir}/man5
+install -d $RPM_BUILD_ROOT%{_var}/{lib,log}/flexbackup
 
 install flexbackup $RPM_BUILD_ROOT%{_bindir}
 install flexbackup.conf $RPM_BUILD_ROOT%{_sysconfdir}
@@ -69,4 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES CREDITS README TODO faq.html
 %attr(755,root,root) %{_bindir}/flexbackup
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/flexbackup.conf
+%dir %{_var}/lib/flexbackup
+%dir %{_var}/log/flexbackup
 %{_mandir}/man?/*
