@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Archiving
 Group(de):	Applikationen/Archivierung
 Group(pl):	Aplikacje/Archiwizacja
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://members.home.com/flexbackup/tarball/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ksh.patch
 URL:		http://members.home.com/flexbackup/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
