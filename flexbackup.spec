@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Archiving
 Source0:	http://flexbackup.sourceforge.net/tarball/%{name}-%{version}.tar.gz
 # Source0-md5:	4955c89dbee354248f354a9bf0a480dd
-URL:		http://members.home.com/flexbackup/
+URL:		http://www.flexbackup.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	afio
 Requires:	buffer
