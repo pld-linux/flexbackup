@@ -13,7 +13,7 @@ Requires:	afio
 Requires:	buffer
 Requires:	grep
 Requires:	fileutils
-#Requires:	bzip2 or gzip or zip - your mileage may vary	
+#Requires:	bzip2 or gzip or zip - your mileage may vary
 
 %description
 Flexible backup script.
