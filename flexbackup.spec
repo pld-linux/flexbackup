@@ -2,16 +2,20 @@ Summary:	Flexible backup script
 Summary(pl):	Elastyczny skrypt do tworzenia kopii zapasowych
 Name:		flexbackup
 Version:	0.9.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Group(de):	Applikationen/Archivierung
 Group(pl):	Aplikacje/Archiwizacja
 Source0:	%{name}-%{version}.tar.gz
+Patch0:	flexbackup-ksh.patch
 URL:		http://members.home.com/flexbackup/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	afio
 Requires:	buffer
+Requires:	grep
+Requires:	fileutils
+#Requires: bzip2 or gzip or zip - your mileage may vary	
 
 %description
 Flexible backup script.
@@ -46,6 +50,7 @@ Zalety:
 
 %prep
 %setup  -q
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
