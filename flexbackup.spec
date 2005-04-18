@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES CREDITS README TODO faq.html
 %attr(755,root,root) %{_bindir}/flexbackup
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/flexbackup.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/flexbackup.conf
 %dir %{_var}/lib/flexbackup
 %dir %{_var}/log/flexbackup
 %{_mandir}/man?/*
