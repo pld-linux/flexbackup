@@ -3,17 +3,18 @@ Summary(pl):	Elastyczny skrypt do tworzenia kopii zapasowych
 Name:		flexbackup
 Version:	1.2.1
 Release:	2
-License:	GPL
+License:	GPL v2
 Group:		Applications/Archiving
 Source0:	http://flexbackup.sourceforge.net/tarball/%{name}-%{version}.tar.gz
 # Source0-md5:	4955c89dbee354248f354a9bf0a480dd
 URL:		http://www.flexbackup.org/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	afio
 Requires:	buffer
-Requires:	grep
 Requires:	fileutils
+Requires:	grep
+Requires:	perl-base
 #Requires:	bzip2 or gzip or zip - your mileage may vary
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Flexible backup script.
