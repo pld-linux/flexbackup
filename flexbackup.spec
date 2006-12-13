@@ -14,6 +14,7 @@ Requires:	fileutils
 Requires:	grep
 Requires:	perl-base
 #Requires:	bzip2 or gzip or zip - your mileage may vary
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
