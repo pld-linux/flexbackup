@@ -1,5 +1,5 @@
 Summary:	Flexible backup script
-Summary(pl):	Elastyczny skrypt do tworzenia kopii zapasowych
+Summary(pl.UTF-8):   Elastyczny skrypt do tworzenia kopii zapasowych
 Name:		flexbackup
 Version:	1.2.1
 Release:	2
@@ -32,20 +32,20 @@ Features:
   files
 - Nice log files
 
-%description -l pl
+%description -l pl.UTF-8
 Elastyczny skrypt do tworzenia kopii zapasowych.
 
 Zalety:
-- 砤twy w konfiguracji
-- umo縧iwia tworzenie kopii zapasowych programami takimi jak: dump,
+- 艂atwy w konfiguracji
+- umo偶liwia tworzenie kopii zapasowych programami takimi jak: dump,
   afio lub cpio
-- tryby tworzenia, odtwarzania, por體nywania oraz wy秝ietlania
-  zawarto禼i kopii
-- kompresja oraz buforowanie dla wszystkich typ體 kopii
-- pe硁e oraz przyrostowe tworzenie archiw體
-- spis tre禼i
+- tryby tworzenia, odtwarzania, por贸wnywania oraz wy艣wietlania
+  zawarto艣ci kopii
+- kompresja oraz buforowanie dla wszystkich typ贸w kopii
+- pe艂ne oraz przyrostowe tworzenie archiw贸w
+- spis tre艣ci
 - zdalne tworzenie kopii zapasowych
-- wsp蟪pracuje ze streamerami IDE/SCSI
+- wsp贸艂pracuje ze streamerami IDE/SCSI
 - dziennik tworzonych kopii zapasowych
 
 %prep
