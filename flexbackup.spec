@@ -1,5 +1,5 @@
 Summary:	Flexible backup script
-Summary(pl.UTF-8):   Elastyczny skrypt do tworzenia kopii zapasowych
+Summary(pl.UTF-8):	Elastyczny skrypt do tworzenia kopii zapasowych
 Name:		flexbackup
 Version:	1.2.1
 Release:	2
